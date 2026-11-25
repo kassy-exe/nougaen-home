@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NougÆn ― ヌウゲン</title>
+<meta name="description" content="Kassyによって作られた人工言語 NougÆn（ヌウゲン）。Simplified, Glorious, Logical.">
+<style>
+@font-face{font-family:"Nougaen";src:url(data:font/woff2;base64,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) format("woff2");font-display:swap}
+:root{--bg:#0a0c1a;--ink:#f2f0e9;--muted:#9aa3c7;--gold:#d9a441;--gold2:#f0cd8a;--line:#262b4d}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","YuMincho",serif;line-height:2;overflow-x:hidden}
+html.smooth-on{overflow:hidden}
+html.smooth-on body{overflow:hidden}
+html.smooth-on #smooth{position:fixed;inset:0;overflow:hidden}
+html.smooth-on #content{will-change:transform}
+.nu{font-family:"Nougaen",sans-serif}
+[data-anim]{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.in [data-anim],[data-anim].in{opacity:1;transform:none}
+.in [data-anim="2"]{transition-delay:.18s}
+.in [data-anim="3"]{transition-delay:.36s}
+.in [data-anim="4"]{transition-delay:.54s}
+header{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:56px 20px;position:relative;background:radial-gradient(ellipse at 50% 32%,#1d2249 0%,var(--bg) 64%);overflow:hidden}
+.eyebrow{color:var(--gold);letter-spacing:.62em;font-size:13px;text-indent:.62em}
+h1{font-size:min(19vw,118px);font-weight:600;letter-spacing:.05em;line-height:1.25;margin-top:14px}
+.slogan{margin-top:26px;font-size:min(6.6vw,30px);letter-spacing:.22em;color:var(--gold2)}
+.slogan small{display:block;color:var(--muted);font-size:12.5px;letter-spacing:.5em;margin-top:14px;text-indent:.5em}
+.hero-stems{margin-top:58px;color:#454d85;font-size:min(8vw,34px);line-height:1.5;letter-spacing:.18em;white-space:nowrap;will-change:translate}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:11px;letter-spacing:.4em;text-indent:.4em;animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+.block{padding:120px 20px;max-width:920px;margin:0 auto;text-align:center}
+.sec-title{color:var(--gold);letter-spacing:.5em;text-indent:.5em;font-size:13px;margin-bottom:48px;text-align:center}
+.words{display:flex;flex-direction:column;gap:44px;text-align:center}
+.wrow .en{font-size:min(11vw,52px);letter-spacing:.14em;line-height:1.5}
+.wrow .en i{font-style:normal;color:var(--gold)}
+.wrow .jl{color:var(--muted);font-size:min(4.6vw,16.5px);letter-spacing:.16em;margin-top:4px}
+.band{overflow:hidden;white-space:nowrap;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:#333a68}
+.band .track{display:inline-block;animation:marquee 46s linear infinite;will-change:transform}
+.band .nu{font-size:min(13vw,60px);line-height:1.4;letter-spacing:.14em}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.phrase .nu{font-size:min(14vw,68px);line-height:1.55;color:#f5efdf;word-break:break-all;will-change:transform,opacity}
+.phrase .rd{color:var(--gold);letter-spacing:.34em;font-size:13.5px;margin-top:14px;text-indent:.34em;overflow-wrap:anywhere}
+.phrase .jp{color:var(--muted);font-size:15px;letter-spacing:.3em;margin-top:2px;text-indent:.3em}
+.block.wide .phrase .nu{font-size:min(7.6vw,37px);line-height:1.9;text-align:left}
+.wild-ch{display:inline-block;opacity:0}
+.wild-ch.pop{opacity:1;transition:opacity .12s,transform .22s cubic-bezier(.2,2.2,.4,1)}
+.block.wide .phrase.raging{animation:rage .09s linear infinite alternate}
+@keyframes rage{from{transform:translateX(-2.5px)}to{transform:translateX(2.5px)}}
+.block.wide .phrase.done{animation:shake .32s ease}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}55%{transform:translateX(5px)}80%{transform:translateX(-2px)}}
+.stems{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 20px}
+.sg{text-align:center;width:86px}
+.sg .nu{display:block;font-size:56px;line-height:1.35;color:#f5efdf}
+.sg .sr{display:block;color:var(--muted);font-size:12px;letter-spacing:.18em;margin-top:4px}
+.digits .nu{font-size:min(9vw,40px);letter-spacing:.3em;color:#f5efdf;line-height:1.6}
+.digits .cap{color:var(--muted);font-size:13.5px;letter-spacing:.3em;margin-top:12px}
+footer{padding:90px 20px 70px;text-align:center;border-top:1px solid var(--line)}
+footer nav{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
+footer a{color:var(--ink);text-decoration:none;letter-spacing:.24em;font-size:14.5px}
+footer a:hover{color:var(--gold)}
+.credit{color:var(--muted);font-size:12.5px;letter-spacing:.3em}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-anim],.sg,.dg,.wrow,.sec-title,.pch,.phrase .rd,.phrase .jp{opacity:1!important;transform:none!important;filter:none!important}}
+
+#bgfx{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+#smooth{position:relative;z-index:1}
+.bglayer{position:absolute;left:0;top:0;width:100%;height:200%;will-change:transform}
+.pfx{position:absolute;font-family:"Nougaen",sans-serif;color:#39406f;animation:floaty ease-in-out infinite alternate;line-height:1}
+@keyframes floaty{from{transform:translate(-10px,-30px) rotate(-7deg)}to{transform:translate(12px,30px) rotate(8deg)}}
+.slw{display:inline-block;opacity:0}
+.slw.l{transform:translateX(-56px)} .slw.r{transform:translateX(56px)} .slw.c{transform:translateY(26px)}
+header.in .slw{opacity:1;transform:none;transition:opacity .8s,transform .9s cubic-bezier(.2,1.6,.3,1)}
+.slogan{animation:glowpulse 4.2s ease-in-out infinite}
+@keyframes glowpulse{0%,100%{text-shadow:0 0 0 rgba(217,164,65,0)}50%{text-shadow:0 0 26px rgba(217,164,65,.45)}}
+.hst{display:inline-block;animation:wave 2.8s ease-in-out infinite alternate}
+@keyframes wave{from{transform:translateY(-7px)}to{transform:translateY(9px)}}
+.sec-title{transition:opacity 1.1s,filter 1.1s,transform 1.1s}
+html.smooth-on .sec-title{opacity:0;filter:blur(9px);transform:scale(.96)}
+html.smooth-on .in .sec-title{opacity:1;filter:blur(0);transform:none}
+.wrow{transition:opacity .9s,transform .9s cubic-bezier(.2,1.4,.3,1)}
+html.smooth-on .wrow{opacity:0}
+.wrow:nth-child(1){transform:translateX(-64px)} .wrow:nth-child(2){transform:scale(.82)} .wrow:nth-child(3){transform:translateX(64px)}
+html.smooth-on .in .wrow{opacity:1;transform:none}
+.in .wrow:nth-child(2){transition-delay:.15s} .in .wrow:nth-child(3){transition-delay:.3s}
+.band.tilt{transform:rotate(-2deg) scale(1.03);border:none;color:#2c3260}
+.band.rev .track{animation-direction:reverse;animation-duration:38s}
+.pch{display:inline-block}
+html.smooth-on .pch{opacity:0;transform:translateY(18px) rotate(5deg) scale(1.25)}
+.phrase.go .pch{opacity:1;transform:none;transition:opacity .4s,transform .5s cubic-bezier(.2,2,.3,1)}
+.sg{transition:opacity .6s,transform .65s cubic-bezier(.2,1.4,.3,1)}
+html.smooth-on .sg{opacity:0;transform:translateY(24px) rotateY(65deg)}
+html.smooth-on .in .sg{opacity:1;transform:none}
+.dg{display:inline-block}
+html.smooth-on .dg{opacity:0;transform:rotateX(82deg)}
+html.smooth-on .in .dg{opacity:1;transform:none;transition:opacity .5s,transform .6s cubic-bezier(.2,1.5,.3,1)}
+
+#bgfx{animation:bgfade 9s ease-in-out infinite alternate}
+@keyframes bgfade{from{opacity:.7}to{opacity:1}}
+header>*{position:relative;z-index:1}
+.ringwrap{position:absolute;left:50%;top:46%;width:min(92vw,640px);aspect-ratio:1;transform:translate(-50%,-50%);z-index:0;pointer-events:none}
+.ring{position:absolute;inset:0;animation:spin 150s linear infinite}
+.ring.r2{inset:17%;animation:spinrev 115s linear infinite}
+.ring.r3{inset:8.5%;animation:spin 240s linear infinite}
+.ring.r3 span{color:#8a6d2f}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinrev{to{transform:rotate(-360deg)}}
+.ring span{position:absolute;font-family:"Nougaen",sans-serif;line-height:1;color:#454d85}
+.ring.r2 span{color:#77602a}
+section.block:not(.wide) .phrase{animation:idlefloat 7.5s ease-in-out infinite alternate}
+@keyframes idlefloat{from{transform:translateY(-5px)}to{transform:translateY(6px)}}
+.band{animation:bandhue 10s ease-in-out infinite alternate}
+@keyframes bandhue{from{color:#333a68}to{color:#4a55a0}}
+
+html.smooth-on .phrase .rd,html.smooth-on .phrase .jp{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s ease}
+html.smooth-on .phrase.go .rd{opacity:1;transform:none;transition-delay:.3s}
+html.smooth-on .phrase.go .jp{opacity:1;transform:none;transition-delay:.55s}
+html.smooth-on .block.wide .phrase.go .rd{transition-delay:1.6s}
+html.smooth-on .block.wide .phrase.go .jp{transition-delay:1.85s}
+.band{mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+header .eyebrow{transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1),letter-spacing 1.8s cubic-bezier(.2,.7,.2,1)}
+html.smooth-on header .eyebrow{letter-spacing:.98em}
+html.smooth-on header.in .eyebrow{letter-spacing:.62em}
+
+.rays{position:absolute;inset:0;background:linear-gradient(115deg,transparent 28%,rgba(160,190,255,.07) 37%,transparent 46%,transparent 54%,rgba(160,190,255,.055) 63%,transparent 73%);pointer-events:none;z-index:0}
+.depthmark{color:#5f6cae;font-size:11px;letter-spacing:.42em;text-indent:.42em;margin-bottom:20px;text-align:center}
+#depth{position:fixed;left:16px;bottom:14px;z-index:20;color:#f0cd8a;font-size:11px;letter-spacing:.32em;opacity:.85;pointer-events:none}
+#bgfx.abyss .pfx{color:#7fd4ff;text-shadow:0 0 14px rgba(127,212,255,.85)}
+.pfx{transition:color 1.2s,text-shadow 1.2s}
+.portal-rings{position:relative;width:min(72vw,340px);aspect-ratio:1;margin:6px auto 40px}
+.pring{position:absolute;border-radius:50%;border:1px solid rgba(217,164,65,.5)}
+.pring.a{inset:0;animation:spin 46s linear infinite}
+.pring.b{inset:14%;border-color:rgba(127,212,255,.45);border-style:dashed;animation:spinrev 32s linear infinite}
+.pring.c{inset:28%;border-color:rgba(240,205,138,.65);animation:spin 24s linear infinite}
+.pcore{position:absolute;inset:40%;border-radius:50%;background:radial-gradient(circle,#f0cd8a 0%,rgba(217,164,65,.38) 46%,transparent 72%);animation:corepulse 5s ease-in-out infinite alternate}
+@keyframes corepulse{from{transform:scale(.9);opacity:.7}to{transform:scale(1.08);opacity:1}}
+.portal-txt{color:var(--muted);letter-spacing:.22em;font-size:min(4.6vw,16px);margin-bottom:34px}
+.portal-btn{display:inline-block;color:var(--gold2);border:1px solid var(--gold);border-radius:999px;padding:14px 42px;text-decoration:none;letter-spacing:.3em;text-indent:.3em;font-size:15px;transition:background .4s,color .4s}
+.portal-btn:hover{background:var(--gold);color:#0a0c1a}
+</style>
+</head>
+<body>
+<div id="bgfx" aria-hidden="true"></div>
+<div id="smooth"><div id="content">
+<header class="rv">
+<div class="rays" id="rays" aria-hidden="true"></div>
+<div class="ringwrap" id="ringwrap" aria-hidden="true"><div class="ring" id="ring1"></div><div class="ring r3" id="ring3"></div><div class="ring r2" id="ring2"></div></div>
+<div class="eyebrow" data-anim>人工言語</div>
+<h1 data-anim="2">NougÆn</h1>
+<div class="slogan" data-anim="3">Simplified, Glorious, Logical<small>ヌウゲン</small></div>
+<div class="hero-stems nu" id="heroStems" data-anim="4">          </div>
+<div class="scroll-cue" id="cue">SCROLL</div>
+</header>
+
+<section class="block rv">
+<div class="depthmark">-50 m</div>
+<div class="sec-title">理念</div>
+<div class="words">
+<div class="wrow"><div class="en"><i>S</i>implified</div><div class="jl">活用なし、例外なし。一筆書きの文字</div></div>
+<div class="wrow"><div class="en"><i>G</i>lorious</div><div class="jl">音と意味、二層の文字が織りなす字形</div></div>
+<div class="wrow"><div class="en"><i>L</i>ogical</div><div class="jl">役割は語順のみ。動詞は常に二番目</div></div>
+</div>
+</section>
+
+<div class="band" id="band" aria-hidden="true"><span class="track"><span class="nu">pbtdkgfvθðszʃʒhmnŋlɹjw iɛæɑɔʌəʊu pbtdkgfvθðszʃʒhmnŋlɹjw iɛæɑɔʌəʊu&nbsp;</span><span class="nu">pbtdkgfvθðszʃʒhmnŋlɹjw iɛæɑɔʌəʊu pbtdkgfvθðszʃʒhmnŋlɹjw iɛæɑɔʌəʊu&nbsp;</span></span></div>
+
+<section class="block"><div class="depthmark">-800 m</div><div class="phrase rv"><div class="nu focus"></div><div class="rd">Auv</div><div class="jp">言葉</div></div></section>
+<section class="block"><div class="depthmark">-1,500 m</div><div class="phrase rv"><div class="nu focus"></div><div class="rd">Haifi</div><div class="jp">永遠</div></div></section>
+<section class="block"><div class="depthmark">-2,300 m</div><div class="phrase rv"><div class="nu focus">lʊp</div><div class="rd">Lauvupkerka</div><div class="jp">夢</div></div></section>
+<section class="block"><div class="depthmark">-3,100 m</div><div class="phrase rv"><div class="nu focus">nɑ</div><div class="rd">Haifilænɑ</div><div class="jp">世界</div></div></section>
+<section class="block wide"><div class="depthmark">-4,500 m</div><div class="phrase rv"><div class="nu focus">nɔkəɹkɑkəɹkkəɹkɑkəɹkkəɹkɑnɔkəɹkɑjæufkɑtɑl</div><div class="rd">Stæsthkerkahainohaifihaikerkakerkauvstæsthkerkahaikerkauvstæsthkerkanoauvstæsthkerkahaijæufkatalnophailæstæsthkerkahai</div><div class="jp">出会い ― 人生で0〜2回</div></div></section>
+
+<div class="band tilt rev" aria-hidden="true"><span class="track"><span class="nu" id="band2a"></span><span class="nu" id="band2b"></span></span></div>
+
+<section class="block rv">
+<div class="depthmark">-6,000 m</div>
+<div class="sec-title">語幹字</div>
+<div class="stems"><div class="sg"><span class="nu"></span><span class="sr">kerka</span></div><div class="sg"><span class="nu"></span><span class="sr">auv</span></div><div class="sg"><span class="nu"></span><span class="sr">hai</span></div><div class="sg"><span class="nu"></span><span class="sr">læ</span></div><div class="sg"><span class="nu"></span><span class="sr">stæsth</span></div><div class="sg"><span class="nu"></span><span class="sr">nop</span></div><div class="sg"><span class="nu"></span><span class="sr">fi</span></div><div class="sg"><span class="nu"></span><span class="sr">tekæ</span></div><div class="sg"><span class="nu"></span><span class="sr">no</span></div><div class="sg"><span class="nu"></span><span class="sr">na</span></div><div class="sg"><span class="nu"></span><span class="sr">they</span></div></div>
+</section>
+
+<section class="block rv">
+<div class="depthmark">-8,000 m</div>
+<div class="digits">
+<div class="nu">0 1 2 3 4 5 6 7 8 9 Ƨ Ɛ</div>
+<div class="cap">十二進数の世界</div>
+</div>
+</section>
+
+
+<section class="block portal rv">
+<div class="depthmark">-10,935 m</div>
+<div class="portal-rings" aria-hidden="true"><div class="pring a"></div><div class="pring b"></div><div class="pring c"></div><div class="pcore"></div></div>
+<div class="sec-title">深海の奥</div>
+<p class="portal-txt" data-anim>言葉の海の底。ここに、もうひとつの世界が眠る</p>
+<a class="portal-btn" data-anim="2" href="https://nougaen-is.vercel.app">NougÆn Interactive System</a>
+</section>
+
+<footer class="rv">
+<nav data-anim>
+<a href="https://nougaen-notion.aokassy.workers.dev/dict">辞書</a>
+<a href="https://nougaen-notion.aokassy.workers.dev/">資料</a>
+<a href="https://nougaen-is.vercel.app">NougÆn IS</a>
+</nav>
+<div class="credit" data-anim="2">NougÆn by Kassy</div>
+</footer>
+</div></div>
+
+<script>
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const content=document.getElementById('content');
+  const heroStems=document.getElementById('heroStems');
+  const cue=document.getElementById('cue');
+  const rays=document.getElementById('rays');
+  const depthEl=document.createElement('div'); depthEl.id='depth'; depthEl.textContent='DEPTH 0 m'; document.body.appendChild(depthEl);
+  const ringwrap=document.getElementById('ringwrap');
+  let lastT=performance.now();
+  const GL='pbtdkgfvθðszʃʒhmnŋlɹjw iɛæɑɔʌəʊu';
+  const bgfx=document.getElementById('bgfx');
+  const bgA=document.createElement('div'); bgA.className='bglayer'; bgfx.appendChild(bgA);
+  const bgB=document.createElement('div'); bgB.className='bglayer'; bgfx.appendChild(bgB);
+  [bgA,bgB].forEach(layer=>{ for(let i=0;i<12;i++){ const s=document.createElement('span'); s.className='pfx nu'; s.textContent=GL[Math.floor(Math.random()*GL.length)]; s.style.left=(Math.random()*96)+'%'; s.style.top=(Math.random()*195)+'%'; s.style.fontSize=(22+Math.random()*44)+'px'; s.style.opacity=(.18+Math.random()*.32); s.style.animationDuration=(5+Math.random()*8)+'s'; s.style.animationDelay=(-Math.random()*8)+'s'; layer.appendChild(s); } });
+
+  function fillRing(el, chars, pct, fs){ const n=chars.length; [...chars].forEach((c,i)=>{ const a=i/n*Math.PI*2; const s=document.createElement('span'); s.textContent=c; s.style.left=(50+pct*Math.cos(a))+'%'; s.style.top=(50+pct*Math.sin(a))+'%'; s.style.fontSize=fs; s.style.transform='translate(-50%,-50%) rotate('+((a*180/Math.PI)+90)+'deg)'; el.appendChild(s); }); }
+  fillRing(document.getElementById('ring1'), 'pbtdkgfvθðszʃʒhmnŋlɹjwiɛæɑɔʌəʊu', 47, 'min(4.6vw,21px)');
+  fillRing(document.getElementById('ring2'), '\uE000\uE001\uE002\uE003\uE004\uE005\uE006\uE007\uE008\uE009\uE00A', 46, 'min(5.4vw,25px)');
+  (function(){ const el=document.getElementById('ring3'); const chars='0123456789\u01A7\u0190'; [...chars].forEach((c,i)=>{ const a=i/12*Math.PI*2-Math.PI/2; const s=document.createElement('span'); s.textContent=c; s.style.left=(50+47*Math.cos(a))+'%'; s.style.top=(50+47*Math.sin(a))+'%'; s.style.fontSize='min(4vw,18px)'; s.style.transform='translate(-50%,-50%)'; el.appendChild(s); }); })();
+  const slogan=document.querySelector('.slogan');
+  const slwCls=['l','c','r'];
+  slogan.innerHTML=slogan.childNodes[0].textContent.trim().split(', ').map((w,i)=>'<span class="slw '+slwCls[i%3]+'" style="transition-delay:'+(0.55+i*0.16)+'s">'+w+(i<2?',':'')+'</span>').join(' ')+'<small>ヌウゲン</small>';
+  heroStems.innerHTML=[...heroStems.textContent].map((c,i)=>c===' '?' ':'<span class="hst" style="animation-delay:'+(i*0.11)+'s">'+c+'</span>').join('');
+  const stemStr='      ';
+  document.getElementById('band2a').textContent=stemStr.repeat(6);
+  document.getElementById('band2b').textContent=stemStr.repeat(6);
+  document.querySelectorAll('.phrase:not(.block.wide .phrase) .nu').forEach(nu=>{ nu.innerHTML=[...nu.textContent].map((c,i)=>'<span class="pch" style="transition-delay:'+(i*0.045)+'s">'+c+'</span>').join(''); });
+  document.querySelectorAll('.sg').forEach((sg,i)=>{ sg.style.transitionDelay=(i*0.06)+'s'; });
+  const dnu=document.querySelector('.digits .nu');
+  dnu.innerHTML=dnu.textContent.trim().split(/\s+/).map((d,i)=>'<span class="dg" style="transition-delay:'+(i*0.055)+'s">'+d+'</span>').join(' ');
+
+  const band=document.getElementById('band');
+  const rvs=[...document.querySelectorAll('.rv')];
+  const focus=[...document.querySelectorAll('.focus')];
+  const wildNu=document.querySelector('.block.wide .nu');
+  const wildPhrase=wildNu.closest('.phrase');
+  const wildSpans=[...wildNu.textContent].map(ch=>{ const s=document.createElement('span'); s.className='wild-ch'; s.textContent=ch; s.style.transform='scale(1.7) rotate('+((Math.random()*14)-7).toFixed(1)+'deg)'; return s; });
+  wildNu.textContent=''; wildSpans.forEach(s=>wildNu.appendChild(s));
+  let wildStarted=false;
+  function startWild(){ wildStarted=true; wildPhrase.classList.add('raging'); let i=0; (function step(){ const s=wildSpans[i]; if(!s){ wildPhrase.classList.remove('raging'); wildPhrase.classList.add('done'); return; } s.classList.add('pop'); requestAnimationFrame(()=>{ s.style.transform=''; }); i++; setTimeout(step,Math.max(11,44-i*.6)); })(); }
+  let max=0, target=0, current=0, vel=0, lastY=null, touching=false;
+  function measure(){ max=Math.max(0, content.offsetHeight-innerHeight); document.body.style.height=content.offsetHeight+'px'; target=Math.min(target,max); }
+  document.documentElement.classList.add('smooth-on');
+  measure();
+  addEventListener('resize',measure);
+  addEventListener('load',measure);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(measure);
+  addEventListener('wheel',e=>{ e.preventDefault(); target+=e.deltaY; vel=0; target=Math.max(0,Math.min(max,target)); },{passive:false});
+  addEventListener('touchstart',e=>{ touching=true; lastY=e.touches[0].clientY; vel=0; },{passive:true});
+  addEventListener('touchmove',e=>{ e.preventDefault(); const y=e.touches[0].clientY; const d=lastY-y; lastY=y; vel=d; target=Math.max(0,Math.min(max,target+d)); },{passive:false});
+  addEventListener('touchend',()=>{ touching=false; });
+  addEventListener('keydown',e=>{ const step={ArrowDown:60,ArrowUp:-60,PageDown:innerHeight*.9,PageUp:-innerHeight*.9,Space:innerHeight*.9}[e.code]; if(step!==undefined){ e.preventDefault(); target=Math.max(0,Math.min(max,target+step)); } if(e.code==='End') target=max; if(e.code==='Home') target=0; });
+  function frame(now){
+    const dt=Math.min(50,now-lastT); lastT=now; const fr=dt/16.7;
+    if(!touching&&Math.abs(vel)>.15){ target=Math.max(0,Math.min(max,target+vel*fr)); vel*=Math.pow(.93,fr); }
+    current+=(target-current)*(1-Math.exp(-dt/95));
+    if(Math.abs(target-current)<.05) current=target;
+    const sk=Math.max(-3.4,Math.min(3.4,(target-current)*.006)); content.style.transform='translate3d(0,'+(-current)+'px,0) skewY('+sk.toFixed(2)+'deg)';
+    const vh=innerHeight;
+    heroStems.style.translate=(-current*.18)+'px 0';
+    bgA.style.transform='translate3d(0,'+(-((current*.10)%vh))+'px,0)';
+    bgB.style.transform='translate3d(0,'+(-((current*.22)%vh))+'px,0)';
+    const br=band.getBoundingClientRect();
+    band.style.transform='translateY('+((br.top+br.height/2-vh/2)*-.06)+'px)';
+    rvs.forEach(el=>{ if(el.classList.contains('in')) return; const r=el.getBoundingClientRect(); if(r.top<vh*.85&&r.bottom>0) el.classList.add('in'); if(el.classList.contains('phrase')) el.classList.add('go'); });
+    if(!wildStarted&&wildPhrase.classList.contains('in')) startWild();
+    focus.forEach(el=>{ const r=el.getBoundingClientRect(); const c=r.top+r.height/2; let p=Math.max(0,1-Math.abs(c-vh/2)/(vh*.72)); p=p*p*(3-2*p); el.style.transform='scale('+(.93+.07*p)+')'; el.style.opacity=(.3+.7*p).toFixed(3); const ga=Math.max(0,(p-.78)/.22)*.45; el.style.textShadow=ga>0?'0 0 34px rgba(217,164,65,'+ga.toFixed(3)+')':'none'; });
+    cue.style.opacity=Math.max(0,1-current/260).toFixed(3);
+    const prog=max>0?current/max:0;
+    const stops=[[10,12,26],[6,10,36],[3,6,18],[1,2,10]];
+    const seg=Math.min(2,Math.floor(prog*3)), ft=prog*3-seg;
+    const c0=stops[seg], c1=stops[seg+1];
+    document.body.style.background='rgb('+Math.round(c0[0]+(c1[0]-c0[0])*ft)+','+Math.round(c0[1]+(c1[1]-c0[1])*ft)+','+Math.round(c0[2]+(c1[2]-c0[2])*ft)+')';
+    depthEl.textContent='DEPTH -'+Math.round(prog*10935).toLocaleString('en-US')+' m';
+    depthEl.style.color=prog>.55?'#9fe8ff':'';
+    bgfx.classList.toggle('abyss',prog>.55);
+    rays.style.opacity=Math.max(0,1-prog*3.2).toFixed(3);
+    ringwrap.style.rotate=(current*.015).toFixed(2)+'deg';
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
